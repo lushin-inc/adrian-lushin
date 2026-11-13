@@ -115,6 +115,25 @@
   .tg-tbl .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; }
   .dot.ldr { background: var(--stable); } .dot.mgr { background: var(--fireball); } .dot.sls { background: var(--fresh); } .dot.oth { background: #9aa3ad; }
 #view-kickoff .res { width: min(1280px, calc(100vw - 48px)); }
+#kickoff-tbl { font-size: 14px; }
+#kickoff-tbl th, #kickoff-tbl td { border-right: 0; }
+#kickoff-tbl tr > :first-child { border-left: 0; }
+#kickoff-tbl th { background: #fff; border-top: 0; border-bottom: 1px solid var(--stable); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+#kickoff-tbl th button, #kickoff-tbl th.ns span { padding: 10px 14px; }
+#kickoff-tbl td { height: 44px; padding: 0 14px; border-bottom: 1px solid var(--hair); color: #3a4656; }
+#kickoff-tbl td.n { color: var(--stable); font-weight: 600; }
+#kickoff-tbl .rn { width: 34px; background: transparent; color: #aab3bf; font-size: 11px; }
+#kickoff-tbl td.blank { background: var(--card); }
+#kickoff-tbl tbody tr:hover td:not(.rn) { background: var(--dim); }
+#kickoff-tbl .dot { width: 10px; height: 10px; margin-right: 9px; }
+#kickoff-tbl .dot.cte { background: var(--stable); }
+#kickoff-tbl .dot.ldr { background: #1d8c5e; }
+#kickoff-tbl .dot.mgr { background: var(--fireball); }
+#kickoff-tbl .dot.oth { background: #9aa3ad; }
+#kickoff-tbl td:nth-child(2) { font-weight: 600; color: var(--stable); white-space: nowrap; }
+#kickoff-tbl td:nth-child(8) { color: var(--muted); font-size: 13px; }
+#kickoff-tbl td:nth-child(6) { white-space: normal; line-height: 1.3; }
+#kickoff-tbl { table-layout: auto; }
 
   @media (max-width: 560px) {
     .wrap { padding: 32px 16px 72px; }
@@ -435,36 +454,36 @@
       <th class="ns"><span>Email</span></th>
     </tr></thead>
     <tbody>
-<tr data-i="1" data-type="Leader"><td class="rn">1</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Marc Jackson</td><td>MI</td><td>Adrian</td><td>President, CEO</td><td><span class="none">—</span></td><td>mjackson@adriansteel.com</td></tr>
-<tr data-i="2" data-type="Other"><td class="rn">2</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">Kathy Westfall</td><td>MI</td><td>Adrian</td><td>CFO</td><td><span class="none">—</span></td><td>kwestfall@adriansteel.com</td></tr>
-<tr data-i="3" data-type="Other"><td class="rn">3</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">John Ruppert</td><td><span class="none">—</span></td><td>Adrian</td><td><span class="none">—</span></td><td><span class="none">—</span></td><td>jruppert@adriansteel.com</td></tr>
-<tr data-i="4" data-type="Leader"><td class="rn">4</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Don DeLong</td><td>MI</td><td>Adrian</td><td>Executive Chairman</td><td><span class="none">—</span></td><td>ddelong@adriansteel.com</td></tr>
-<tr data-i="5" data-type="Leader"><td class="rn">5</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Travis Cagle</td><td>MI</td><td>CVI Toledo</td><td>Regional GM (North)</td><td>Mike Root</td><td>tcagle@adriansteel.com</td></tr>
-<tr data-i="6" data-type="Leader"><td class="rn">6</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Faiq Elahi</td><td>ON</td><td>Adrian Canada</td><td>GM (Canada)</td><td>Mike Root</td><td>felahi@adriansteel.ca</td></tr>
-<tr data-i="7" data-type="Leader"><td class="rn">7</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Jim Green</td><td>ID</td><td>Extendobed</td><td>Extendobed</td><td>Marc Jackson</td><td><span class="none">—</span></td></tr>
-<tr data-i="8" data-type="Leader"><td class="rn">8</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Chad Henline</td><td>MI</td><td>Adrian</td><td>Sr. Director of Revenue Operations</td><td>Marc Jackson</td><td>chenline@adriansteel.com</td></tr>
-<tr data-i="9" data-type="Leader"><td class="rn">9</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Max Merkel</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>Regional GM (South)</td><td>Mike Root</td><td>mmerkel@advancedworkvans.com</td></tr>
-<tr data-i="10" data-type="Leader"><td class="rn">10</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Mike Root</td><td>MD</td><td>Adrian Maryland</td><td>GM</td><td>Chad Henline</td><td>mroot@adscom1.com</td></tr>
-<tr data-i="11" data-type="Leader"><td class="rn">11</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Jeff Warnecke</td><td>MI</td><td>Adrian</td><td>VP of Strategic Partnerships &amp; Fleet Sales</td><td>Marc Jackson</td><td>jwarnecke@adriansteel.com</td></tr>
-<tr data-i="12" data-type="Manager"><td class="rn">12</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Joe Bowden</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>Interim GM</td><td>Max Merkel</td><td>jbowden@advancedworkvans.com</td></tr>
-<tr data-i="13" data-type="Manager"><td class="rn">13</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Jason Delaney</td><td>MD</td><td>Adrian Maryland</td><td>Commercial Sales Manager</td><td>Mike Root</td><td>jdelaney@adscom1.com</td></tr>
-<tr data-i="14" data-type="Manager"><td class="rn">14</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Durant Dobbs</td><td>GA</td><td>Commercial Truck &amp; Van (GA)</td><td>Sales Manager</td><td>Craig Reed</td><td>ddobbs@comtruckequip.com</td></tr>
-<tr data-i="15" data-type="Manager"><td class="rn">15</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Todd Goldmeyer</td><td>MI</td><td>Adrian</td><td>National Sales Manager</td><td>Chad Henline</td><td>tgoldmeyer@adriansteel.com</td></tr>
-<tr data-i="16" data-type="Manager"><td class="rn">16</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Adam Gregory</td><td>MI</td><td>Adrian</td><td>Sales Engineer (SE)</td><td>Jeff Warnecke</td><td>agregory@adriansteel.com</td></tr>
-<tr data-i="17" data-type="Manager"><td class="rn">17</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Dave Hinson</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>GM</td><td>Max Merkel</td><td>dhinson@advancedworkvans.com</td></tr>
-<tr data-i="18" data-type="Manager"><td class="rn">18</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Ashley Hudson</td><td>MI</td><td>Adrian</td><td>National Sales Manager, Fleet &amp; Mid-Market</td><td>Jeff Warnecke</td><td>ahudson@adriansteel.com</td></tr>
-<tr data-i="19" data-type="Manager"><td class="rn">19</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Raymet Martinez</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>GM</td><td>Max Merkel</td><td>rmartinez@advancedworkvans.com</td></tr>
-<tr data-i="20" data-type="Manager"><td class="rn">20</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Connor Moore</td><td>NY</td><td>CVI New York</td><td>GM</td><td>Travis Cagle</td><td>cmoore@cviny.com</td></tr>
-<tr data-i="21" data-type="Manager"><td class="rn">21</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Howard Ohori</td><td>ON</td><td>Adrian Canada</td><td>National Sales Manager</td><td>Faiq Elahi</td><td>hohori@adriansteel.ca</td></tr>
-<tr data-i="22" data-type="Manager"><td class="rn">22</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Craig Reed</td><td>GA</td><td>Commercial Truck &amp; Van (GA)</td><td>GM</td><td>Max Merkel</td><td>creed@comtruckequip.com</td></tr>
-<tr data-i="23" data-type="Manager"><td class="rn">23</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Erik Roberts</td><td>ID</td><td>Extendobed (ID)</td><td>GM</td><td>Jim Green</td><td>eroberts@extendobed.com</td></tr>
-<tr data-i="24" data-type="Manager"><td class="rn">24</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Ryan Rodriguez</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>GM (Jacksonville)</td><td>Max Merkel</td><td>rrodriguez@advancedworkvans.com</td></tr>
-<tr data-i="25" data-type="Manager"><td class="rn">25</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Shelby Simpson</td><td>MI</td><td>Adrian</td><td>Manager, Midmarket Sales/Strategic Partnerships</td><td>Jeff Warnecke</td><td>ssimpson@adriansteel.com</td></tr>
-<tr data-i="26" data-type="Manager"><td class="rn">26</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Matt Ullrich</td><td>MI</td><td>Adrian Steel of Michigan (Detroit)</td><td>GM</td><td>Travis Cagle</td><td>mullrich@adriansteel.com</td></tr>
-<tr data-i="27" data-type="Manager"><td class="rn">27</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Brian Walsh</td><td>ID</td><td>Extendobed (ID)</td><td>Sales Manager</td><td>Erik Roberts</td><td>brian@extendobed.com</td></tr>
-<tr data-i="28" data-type="Manager"><td class="rn">28</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Ryan Wilkes</td><td>PA</td><td>Adrian Steel of Philadelphia</td><td>GM (Philadelphia, opening)</td><td>Travis Cagle</td><td>rwilkes@adriansteelkc.com</td></tr>
-<tr data-i="29" data-type="Other"><td class="rn">29</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">Greg Hagen</td><td><span class="none">—</span></td><td><span class="none">—</span></td><td><span class="none">—</span></td><td><span class="none">—</span></td><td><span class="none">—</span></td></tr>
-<tr data-i="30" data-type="Other"><td class="rn">30</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">Kelly Roderick</td><td><span class="none">—</span></td><td>Adrian</td><td><span class="none">—</span></td><td><span class="none">—</span></td><td><span class="none">—</span></td></tr>
+<tr data-i="1" data-type="C-Team"><td class="rn">1</td><td data-s="0"><span class="dot cte"></span>C-Team</td><td class="n">Marc Jackson</td><td>MI</td><td>Adrian</td><td>President, CEO</td><td class="blank"></td><td>mjackson@adriansteel.com</td></tr>
+<tr data-i="2" data-type="C-Team"><td class="rn">2</td><td data-s="0"><span class="dot cte"></span>C-Team</td><td class="n">Kathy Westfall</td><td>MI</td><td>Adrian</td><td>CFO</td><td class="blank"></td><td>kwestfall@adriansteel.com</td></tr>
+<tr data-i="3" data-type="C-Team"><td class="rn">3</td><td data-s="0"><span class="dot cte"></span>C-Team</td><td class="n">John Ruppert</td><td class="blank"></td><td>Adrian</td><td class="blank"></td><td class="blank"></td><td>jruppert@adriansteel.com</td></tr>
+<tr data-i="4" data-type="C-Team"><td class="rn">4</td><td data-s="0"><span class="dot cte"></span>C-Team</td><td class="n">Don DeLong</td><td>MI</td><td>Adrian</td><td>Executive Chairman</td><td class="blank"></td><td>ddelong@adriansteel.com</td></tr>
+<tr data-i="5" data-type="Leader"><td class="rn">5</td><td data-s="1"><span class="dot ldr"></span>Leader</td><td class="n">Travis Cagle</td><td>MI</td><td>CVI Toledo</td><td>Regional GM (North)</td><td>Mike Root</td><td>tcagle@adriansteel.com</td></tr>
+<tr data-i="6" data-type="Leader"><td class="rn">6</td><td data-s="1"><span class="dot ldr"></span>Leader</td><td class="n">Faiq Elahi</td><td>ON</td><td>Adrian Canada</td><td>GM (Canada)</td><td>Mike Root</td><td>felahi@adriansteel.ca</td></tr>
+<tr data-i="7" data-type="Leader"><td class="rn">7</td><td data-s="1"><span class="dot ldr"></span>Leader</td><td class="n">Jim Green</td><td>ID</td><td>Extendobed</td><td>Extendobed</td><td>Marc Jackson</td><td class="blank"></td></tr>
+<tr data-i="8" data-type="Leader"><td class="rn">8</td><td data-s="1"><span class="dot ldr"></span>Leader</td><td class="n">Chad Henline</td><td>MI</td><td>Adrian</td><td>Sr. Director of Revenue Operations</td><td>Marc Jackson</td><td>chenline@adriansteel.com</td></tr>
+<tr data-i="9" data-type="Leader"><td class="rn">9</td><td data-s="1"><span class="dot ldr"></span>Leader</td><td class="n">Max Merkel</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>Regional GM (South)</td><td>Mike Root</td><td>mmerkel@advancedworkvans.com</td></tr>
+<tr data-i="10" data-type="Leader"><td class="rn">10</td><td data-s="1"><span class="dot ldr"></span>Leader</td><td class="n">Mike Root</td><td>MD</td><td>Adrian Maryland</td><td>GM</td><td>Chad Henline</td><td>mroot@adscom1.com</td></tr>
+<tr data-i="11" data-type="Leader"><td class="rn">11</td><td data-s="1"><span class="dot ldr"></span>Leader</td><td class="n">Jeff Warnecke</td><td>MI</td><td>Adrian</td><td>VP of Strategic Partnerships &amp; Fleet Sales</td><td>Marc Jackson</td><td>jwarnecke@adriansteel.com</td></tr>
+<tr data-i="12" data-type="Manager"><td class="rn">12</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Joe Bowden</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>Interim GM</td><td>Max Merkel</td><td>jbowden@advancedworkvans.com</td></tr>
+<tr data-i="13" data-type="Manager"><td class="rn">13</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Jason Delaney</td><td>MD</td><td>Adrian Maryland</td><td>Commercial Sales Manager</td><td>Mike Root</td><td>jdelaney@adscom1.com</td></tr>
+<tr data-i="14" data-type="Manager"><td class="rn">14</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Durant Dobbs</td><td>GA</td><td>Commercial Truck &amp; Van (GA)</td><td>Sales Manager</td><td>Craig Reed</td><td>ddobbs@comtruckequip.com</td></tr>
+<tr data-i="15" data-type="Manager"><td class="rn">15</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Todd Goldmeyer</td><td>MI</td><td>Adrian</td><td>National Sales Manager</td><td>Chad Henline</td><td>tgoldmeyer@adriansteel.com</td></tr>
+<tr data-i="16" data-type="Manager"><td class="rn">16</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Adam Gregory</td><td>MI</td><td>Adrian</td><td>Sales Engineer (SE)</td><td>Jeff Warnecke</td><td>agregory@adriansteel.com</td></tr>
+<tr data-i="17" data-type="Manager"><td class="rn">17</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Dave Hinson</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>GM</td><td>Max Merkel</td><td>dhinson@advancedworkvans.com</td></tr>
+<tr data-i="18" data-type="Manager"><td class="rn">18</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Ashley Hudson</td><td>MI</td><td>Adrian</td><td>National Sales Manager, Fleet &amp; Mid-Market</td><td>Jeff Warnecke</td><td>ahudson@adriansteel.com</td></tr>
+<tr data-i="19" data-type="Manager"><td class="rn">19</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Raymet Martinez</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>GM</td><td>Max Merkel</td><td>rmartinez@advancedworkvans.com</td></tr>
+<tr data-i="20" data-type="Manager"><td class="rn">20</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Connor Moore</td><td>NY</td><td>CVI New York</td><td>GM</td><td>Travis Cagle</td><td>cmoore@cviny.com</td></tr>
+<tr data-i="21" data-type="Manager"><td class="rn">21</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Howard Ohori</td><td>ON</td><td>Adrian Canada</td><td>National Sales Manager</td><td>Faiq Elahi</td><td>hohori@adriansteel.ca</td></tr>
+<tr data-i="22" data-type="Manager"><td class="rn">22</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Craig Reed</td><td>GA</td><td>Commercial Truck &amp; Van (GA)</td><td>GM</td><td>Max Merkel</td><td>creed@comtruckequip.com</td></tr>
+<tr data-i="23" data-type="Manager"><td class="rn">23</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Erik Roberts</td><td>ID</td><td>Extendobed (ID)</td><td>GM</td><td>Jim Green</td><td>eroberts@extendobed.com</td></tr>
+<tr data-i="24" data-type="Manager"><td class="rn">24</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Ryan Rodriguez</td><td>FL</td><td>Advanced Work Vans (FL)</td><td>GM (Jacksonville)</td><td>Max Merkel</td><td>rrodriguez@advancedworkvans.com</td></tr>
+<tr data-i="25" data-type="Manager"><td class="rn">25</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Shelby Simpson</td><td>MI</td><td>Adrian</td><td>Manager, Midmarket Sales/Strategic Partnerships</td><td>Jeff Warnecke</td><td>ssimpson@adriansteel.com</td></tr>
+<tr data-i="26" data-type="Manager"><td class="rn">26</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Matt Ullrich</td><td>MI</td><td>Adrian Steel of Michigan (Detroit)</td><td>GM</td><td>Travis Cagle</td><td>mullrich@adriansteel.com</td></tr>
+<tr data-i="27" data-type="Manager"><td class="rn">27</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Brian Walsh</td><td>ID</td><td>Extendobed (ID)</td><td>Sales Manager</td><td>Erik Roberts</td><td>brian@extendobed.com</td></tr>
+<tr data-i="28" data-type="Manager"><td class="rn">28</td><td data-s="2"><span class="dot mgr"></span>Manager</td><td class="n">Ryan Wilkes</td><td>PA</td><td>Adrian Steel of Philadelphia</td><td>GM (Philadelphia, opening)</td><td>Travis Cagle</td><td>rwilkes@adriansteelkc.com</td></tr>
+<tr data-i="29" data-type="Other"><td class="rn">29</td><td data-s="3"><span class="dot oth"></span>Other</td><td class="n">Greg Hagen</td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
+<tr data-i="30" data-type="Other"><td class="rn">30</td><td data-s="3"><span class="dot oth"></span>Other</td><td class="n">Kelly Roderick</td><td class="blank"></td><td>Adrian</td><td class="blank"></td><td class="blank"></td><td class="blank"></td></tr>
     </tbody>
   </table>
 </div>
