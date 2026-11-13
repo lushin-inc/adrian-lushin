@@ -110,7 +110,8 @@
   .tg-tbl a:hover { text-decoration: underline; }
   .tg-tbl .none { color: var(--muted); }
   .tg-tbl .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 8px; }
-  .dot.ldr { background: var(--stable); } .dot.mgr { background: var(--fireball); } .dot.sls { background: var(--fresh); }
+  .dot.ldr { background: var(--stable); } .dot.mgr { background: var(--fireball); } .dot.sls { background: var(--fresh); } .dot.oth { background: #9aa3ad; }
+#view-kickoff .res { width: min(1280px, calc(100vw - 48px)); }
 
   @media (max-width: 560px) {
     .wrap { padding: 32px 16px 72px; }
@@ -315,6 +316,7 @@
       <a class="tab" role="tab" id="tab-links" href="#links" aria-selected="false">Links</a>
       <a class="tab" role="tab" id="tab-seia" href="#seia" aria-selected="false">SEIA Analyzer</a>
       <a class="tab" role="tab" id="tab-org" href="#org" aria-selected="false">Org Chart</a>
+      <a class="tab" role="tab" id="tab-kickoff" href="#kickoff" aria-selected="false">LDR Kickoff</a>
     </nav>
   </div>
 
@@ -637,10 +639,60 @@
 </div>
 </div>
   </section>
+  <section id="view-kickoff" role="tabpanel" aria-labelledby="tab-kickoff" hidden>
+  <div class="res">
+<div class="tbl-wrap">
+  <table class="tg-tbl" id="kickoff-tbl">
+    <thead><tr>
+      <th class="rn"></th>
+      <th data-k="1"><button type="button">Type<span class="ar">▲</span></button></th>
+      <th data-k="2"><button type="button">Name<span class="ar">▲</span></button></th>
+      <th data-k="3"><button type="button">Title<span class="ar">▲</span></button></th>
+      <th data-k="4"><button type="button">Reports To<span class="ar">▲</span></button></th>
+      <th data-k="5"><button type="button">Business Unit<span class="ar">▲</span></button></th>
+      <th data-k="6"><button type="button">Location<span class="ar">▲</span></button></th>
+      <th class="ns"><span>Email</span></th>
+    </tr></thead>
+    <tbody>
+<tr data-i="1" data-type="Leader"><td class="rn">1</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Travis Cagle</td><td>Regional General Manager (North)</td><td>Mike Root</td><td>CVI Toledo</td><td>Michigan</td><td>tcagle@adriansteel.com</td></tr>
+<tr data-i="2" data-type="Leader"><td class="rn">2</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Don DeLong</td><td>Executive Chairman</td><td><span class="none">—</span></td><td>Adrian</td><td>Michigan</td><td>ddelong@adriansteel.com</td></tr>
+<tr data-i="3" data-type="Leader"><td class="rn">3</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Faiq Elahi</td><td>General Manager (Canada)</td><td>Mike Root</td><td>Adrian Canada</td><td>Ontario, Canada</td><td>felahi@adriansteel.ca</td></tr>
+<tr data-i="4" data-type="Leader"><td class="rn">4</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Jim Green</td><td>Extendobed</td><td>Marc Jackson</td><td>Extendobed</td><td>Idaho</td><td><span class="none">—</span></td></tr>
+<tr data-i="5" data-type="Leader"><td class="rn">5</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Chad Henline</td><td>Sr. Director of Revenue Operations</td><td>Marc Jackson</td><td>Adrian</td><td>Michigan</td><td>chenline@adriansteel.com</td></tr>
+<tr data-i="6" data-type="Leader"><td class="rn">6</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Marc Jackson</td><td>President, Chief Executive Officer</td><td><span class="none">—</span></td><td>Adrian</td><td>Michigan</td><td>mjackson@adriansteel.com</td></tr>
+<tr data-i="7" data-type="Leader"><td class="rn">7</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Max Merkel</td><td>Regional General Manager (South)</td><td>Mike Root</td><td>Advanced Work Vans (FL)</td><td>Florida</td><td>mmerkel@advancedworkvans.com</td></tr>
+<tr data-i="8" data-type="Leader"><td class="rn">8</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Mike Root</td><td>General Manager</td><td>Chad Henline</td><td>Adrian Maryland</td><td>Maryland</td><td>mroot@adscom1.com</td></tr>
+<tr data-i="9" data-type="Leader"><td class="rn">9</td><td data-s="0"><span class="dot ldr"></span>Leader</td><td class="n">Jeff Warnecke</td><td>Vice President of Strategic Partnerships &amp; Fleet Sales</td><td>Marc Jackson</td><td>Adrian</td><td>Michigan</td><td>jwarnecke@adriansteel.com</td></tr>
+<tr data-i="10" data-type="Manager"><td class="rn">10</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Joe Bowden</td><td>Interim General Manager</td><td>Max Merkel</td><td>Advanced Work Vans (FL)</td><td>Florida</td><td>jbowden@advancedworkvans.com</td></tr>
+<tr data-i="11" data-type="Manager"><td class="rn">11</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Jason Delaney</td><td>Commercial Sales Manager</td><td>Mike Root</td><td>Adrian Maryland</td><td>Maryland</td><td>jdelaney@adscom1.com</td></tr>
+<tr data-i="12" data-type="Manager"><td class="rn">12</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Durant Dobbs</td><td>Sales Manager</td><td>Craig Reed</td><td>Commercial Truck &amp; Van (GA)</td><td>Georgia</td><td>ddobbs@comtruckequip.com</td></tr>
+<tr data-i="13" data-type="Manager"><td class="rn">13</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Todd Goldmeyer</td><td>National Sales Manager</td><td>Chad Henline</td><td>Adrian</td><td>Michigan</td><td>tgoldmeyer@adriansteel.com</td></tr>
+<tr data-i="14" data-type="Manager"><td class="rn">14</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Adam Gregory</td><td>Sales Engineer (SE)</td><td>Jeff Warnecke</td><td>Adrian</td><td>Michigan</td><td>agregory@adriansteel.com</td></tr>
+<tr data-i="15" data-type="Manager"><td class="rn">15</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Dave Hinson</td><td>General Manager</td><td>Max Merkel</td><td>Advanced Work Vans (FL)</td><td>Florida</td><td>dhinson@advancedworkvans.com</td></tr>
+<tr data-i="16" data-type="Manager"><td class="rn">16</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Ashley Hudson</td><td>National Sales Manager, Fleet &amp; Mid-Market</td><td>Jeff Warnecke</td><td>Adrian</td><td>Michigan</td><td>ahudson@adriansteel.com</td></tr>
+<tr data-i="17" data-type="Manager"><td class="rn">17</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Raymet Martinez</td><td>General Manager</td><td>Max Merkel</td><td>Advanced Work Vans (FL)</td><td>Florida</td><td>rmartinez@advancedworkvans.com</td></tr>
+<tr data-i="18" data-type="Manager"><td class="rn">18</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Connor Moore</td><td>General Manager</td><td>Travis Cagle</td><td>CVI New York</td><td>New York</td><td>cmoore@cviny.com</td></tr>
+<tr data-i="19" data-type="Manager"><td class="rn">19</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Howard Ohori</td><td>National Sales Manager</td><td>Faiq Elahi</td><td>Adrian Canada</td><td>Ontario, Canada</td><td>hohori@adriansteel.ca</td></tr>
+<tr data-i="20" data-type="Manager"><td class="rn">20</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Craig Reed</td><td>General Manager</td><td>Max Merkel</td><td>Commercial Truck &amp; Van (GA)</td><td>Georgia</td><td>creed@comtruckequip.com</td></tr>
+<tr data-i="21" data-type="Manager"><td class="rn">21</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Erik Roberts</td><td>General Manager</td><td>Jim Green</td><td>Extendobed (ID)</td><td>Idaho</td><td>eroberts@extendobed.com</td></tr>
+<tr data-i="22" data-type="Manager"><td class="rn">22</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Ryan Rodriguez</td><td>General Manager (Jacksonville)</td><td>Max Merkel</td><td>Advanced Work Vans (FL)</td><td>Florida</td><td>rrodriguez@advancedworkvans.com</td></tr>
+<tr data-i="23" data-type="Manager"><td class="rn">23</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Shelby Simpson</td><td>Manager, Midmarket Sales/Strategic Partnerships</td><td>Jeff Warnecke</td><td>Adrian</td><td>Michigan</td><td>ssimpson@adriansteel.com</td></tr>
+<tr data-i="24" data-type="Manager"><td class="rn">24</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Matt Ullrich</td><td>General Manager</td><td>Travis Cagle</td><td>Adrian Steel of Michigan (Detroit)</td><td>Michigan</td><td>mullrich@adriansteel.com</td></tr>
+<tr data-i="25" data-type="Manager"><td class="rn">25</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Brian Walsh</td><td>Sales Manager</td><td>Erik Roberts</td><td>Extendobed (ID)</td><td>Idaho</td><td>brian@extendobed.com</td></tr>
+<tr data-i="26" data-type="Manager"><td class="rn">26</td><td data-s="1"><span class="dot mgr"></span>Manager</td><td class="n">Ryan Wilkes</td><td>General Manager (Philadelphia, opening)</td><td>Travis Cagle</td><td>Adrian Steel of Philadelphia</td><td>Pennsylvania</td><td>rwilkes@adriansteelkc.com</td></tr>
+<tr data-i="27" data-type="Other"><td class="rn">27</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">Greg Hagen</td><td><span class="none">—</span></td><td><span class="none">—</span></td><td><span class="none">—</span></td><td><span class="none">—</span></td><td><span class="none">—</span></td></tr>
+<tr data-i="28" data-type="Other"><td class="rn">28</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">Kelly Roderick</td><td><span class="none">—</span></td><td><span class="none">—</span></td><td>Adrian</td><td><span class="none">—</span></td><td><span class="none">—</span></td></tr>
+<tr data-i="29" data-type="Other"><td class="rn">29</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">John Ruppert</td><td><span class="none">—</span></td><td><span class="none">—</span></td><td>Adrian</td><td><span class="none">—</span></td><td>jruppert@adriansteel.com</td></tr>
+<tr data-i="30" data-type="Other"><td class="rn">30</td><td data-s="2"><span class="dot oth"></span>Other</td><td class="n">Kathy Westfall</td><td>Chief Financial Officer</td><td><span class="none">—</span></td><td>Adrian</td><td>Michigan</td><td>kwestfall@adriansteel.com</td></tr>
+    </tbody>
+  </table>
+</div>
+</div>
+  </section>
 </main>
 <script>
 (function () {
-  var views = ['plan', 'calculator', 'links', 'seia', 'org'];
+  var views = ['plan', 'calculator', 'links', 'seia', 'org', 'kickoff'];
   var frames = { seia: document.getElementById('seia-frame'), org: document.getElementById('org-frame') };
   function sizeSeia() {
     var v = document.body.classList.contains('v-seia') ? 'seia' : document.body.classList.contains('v-org') ? 'org' : null;
@@ -669,6 +721,22 @@
   window.addEventListener('resize', sizeSeia);
   window.addEventListener('hashchange', function () { show(); window.scrollTo(0, 0); }); show();
 
+
+  (function () {
+    var kt = document.getElementById('kickoff-tbl'), kb = kt.tBodies[0];
+    kt.querySelectorAll('th[data-k] button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var th = btn.parentNode, k = +th.dataset.k;
+        var dir = th.getAttribute('aria-sort') === 'ascending' ? 'descending' : 'ascending';
+        kt.querySelectorAll('th[aria-sort]').forEach(function (x) { x.removeAttribute('aria-sort'); });
+        th.setAttribute('aria-sort', dir);
+        var rows = Array.prototype.slice.call(kb.rows);
+        var val = function (tr) { var c = tr.cells[k]; return c.dataset.s !== undefined ? c.dataset.s : c.textContent.trim().toLowerCase(); };
+        rows.sort(function (a, b) { var x = val(a), y = val(b); var r = x < y ? -1 : x > y ? 1 : (+a.dataset.i - +b.dataset.i); return dir === 'ascending' ? r : -r; });
+        rows.forEach(function (tr, i) { kb.appendChild(tr); tr.cells[0].textContent = i + 1; });
+      });
+    });
+  })();
   var tbl = document.getElementById('links-tbl'), tbody = tbl.tBodies[0];
   var fTeam = document.getElementById('f-team'), fRole = document.getElementById('f-role'), fClear = document.getElementById('f-clear');
   function applyFilters() {
